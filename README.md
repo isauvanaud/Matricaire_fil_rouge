@@ -36,13 +36,13 @@ pipeline_yolo/
 ├── train_yolov8/
 │   ├── dataset/
 │   │   └── readme.me
-│   ├── dataset_init.py
-│   └── yolo_training.py
+│   ├── yolo_training.py
 │
 ├── test_preliminaire/
 │   └── test_yolov8/
 │       └── test_yolo.py
 │
+├── dataset_init.py
 ├── .gitignore
 └── README.md
 
