@@ -12,10 +12,10 @@ print("CUDA PyTorch :", torch.version.cuda)
 # PARAMÈTRES
 # =========================
 DATASET_YAML = "dataset.yaml"   # chemin vers votre dataset.yaml
-MODEL = "yolov8s.pt"
+MODEL = "yolo26s.pt"
 
 IMGSZ = 128
-EPOCHS = 1500
+EPOCHS = 300
 BATCH = 64
 
 # =========================
@@ -31,7 +31,7 @@ model.train(
     imgsz=IMGSZ,
     epochs=EPOCHS,
     batch=BATCH,
-    patience=300,
+    patience=25,
 
     # Augmentations géométriques adaptées 128x128
     mosaic=0.0,

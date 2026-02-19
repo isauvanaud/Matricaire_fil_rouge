@@ -12,7 +12,7 @@ print("CUDA PyTorch :", torch.version.cuda)
 # PARAMÈTRES
 # =========================
 DATASET_YAML = "dataset.yaml"   # chemin vers votre dataset.yaml
-MODEL = "yolov8s.pt"
+MODEL = "yolo11s.pt"
 
 IMGSZ = 128
 EPOCHS = 1500
