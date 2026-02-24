@@ -1,10 +1,10 @@
 class Config:
     def __init__(self):
-        self.modeles = ["yolov8"]#, "yolo11", "yolo26"
-        self.size = [ "l"]#"n", "s", "m",
-        self.iteration = 1 #3
+        self.modeles = ["yolov8", "yolo11", "yolo26"]#
+        self.size = [ "n", "s", "m","l"]#
+        self.iteration = 2 #3
         self.dataset_number = 2 #3
-        self.soil = [1, 5, 10]#, 10
+        self.soil = [1, 5, 10]#
         self.mu = 18.25
         self.sigma = 4.7
         self.max_tries = 1000
