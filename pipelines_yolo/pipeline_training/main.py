@@ -10,6 +10,7 @@ from config import Config
 from preprocessing_pipeline.database_preparation import set_databases
 from preprocessing_pipeline.database_preparation import dataset_preparation
 from training.run_function import generate_yolo_yaml, infer_dataset_type, iteration_yolo
+from stats.stats_flower import generate_flower_statistics
 import shutil
 import torch
 
@@ -113,6 +114,13 @@ def main():
                 )
                 name_mod = model+size
                 iteration_yolo(cfg.iteration, name_mod, path, yaml_path, cfg, outs_path, d)
+
+    generate_flower_statistics(
+        json_folder="./runs/outs",
+        out_folder="./runs/stats"
+    )
+
+    print("\n=== Comparaison modèles réalisée ===")
 
 
 
