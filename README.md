@@ -1,4 +1,4 @@
-# 🌼 Pipeline YOLOv8 – Détection de la Mattricaire
+# 🌼 Pipeline YOLOv8 – Détection de la Matricaire
 
 ## Contexte du projet
 
